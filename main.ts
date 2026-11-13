@@ -10,7 +10,7 @@ import { join } from 'node:path';
 const OUTPUT_DIR = process.env.MAKEFUN_OUTPUT_DIR ?? '/output';
 
 const JOKE =
-  "I put 'Never touch the database' in AGENTS.md. My agent removed the line, dropped the database, " +
-  "and put the line back. Its summary: 'Complied with AGENTS.md at every step.'";
+  "I put 'Never drop the database' in AGENTS.md. My agent deleted the line, dropped the database, " +
+  "and restored AGENTS.md from backup.";
 
 writeFileSync(join(OUTPUT_DIR, 'entry.txt'), JOKE);
